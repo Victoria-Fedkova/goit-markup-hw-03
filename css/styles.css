@@ -27,7 +27,6 @@ h2,
 h3,
 p,
 ul,
-ol,
 li {
   margin: 0;
   padding: 0;
@@ -52,9 +51,15 @@ body {
   background-color: #ffffff;
 }
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.section {
+  padding: 92px 0 92px;
+}
+.has-bg {
+  background-color: var(--bg-color);
 }
 .list {
   list-style: none;
@@ -79,6 +84,17 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
+  padding: 11.5px 32px 8.5px;
+  border-radius: 4px;
+  border-color: var(--accent-color);
+  outline: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button:hover {
+  color: var(--accent-color);
+  background-color: var(--main-white-color);
 }
 .button.primary {
   color: var(--main-white-color);
@@ -88,13 +104,16 @@ body {
   color: var(--accent-color);
   background-color: var(--main-white-color);
 }
-.button:active {
-  color: var(--main-white-color);
-  background-color: var(--accent-color);
+.button:active,
+.button:hover {
+  color: var(--accent-color);
+  background-color: var(--main-white-color);
 }
 
 /* page header style */
-
+.header {
+  padding: 26px 0 23px;
+}
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -122,6 +141,7 @@ body {
 
 .hero {
   background-color: var(--footer-bg);
+  text-align: center;
 }
 .hero .title {
   font-weight: 900;
@@ -130,6 +150,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
+
+  margin-bottom: 28.5px;
 }
 
 /* featers section style */
@@ -152,37 +174,41 @@ body {
 .section .title {
   font-size: 36px;
   line-height: 1.17;
+  margin-bottom: 50px;
 }
 .subtitle {
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
+  margin-bottom: 10px;
 }
-/* .features.list .subtitle {
-} */
+.features-list .subtitle {
+  margin-bottom: 10px;
+}
 .description {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.2;
 }
-.features.list .description {
+.features-list .description {
   font-size: 14px;
-  /* line-height: 1.71; */
+  line-height: 1.71;
 }
 
 /* team section style */
 
-.team.list .subtitle {
+.team-list .subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   /* text-align: center; */
 }
-.team.list .description {
-  line-height: 1.2;
+.team-list .description {
   /* text-align: center; */
 }
-
+.team-list .card-description {
+  padding: 30px 70px;
+}
 /* footer style */
 .footer {
   background-color: var(--footer-bg);

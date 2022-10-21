@@ -12,29 +12,32 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <!-- page header -->
-      <nav>
-        <!-- page logo-->
-        <a href="./index.html" class="logo link">
-          <span class="logo-accent">Web</span>Studio
-        </a>
-        <!-- main navigation -->
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link current">Студія</a></li>
-          <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-          <li><a href="" class="link">Контакти</a></li>
-        </ul>
-      </nav>
-      <ul class="contacts list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link">
-            info@devstudio.com
+      <div class="container">
+        <nav>
+          <!-- page logo-->
+          <a href="./index.html" class="logo link">
+            <span class="logo-accent">Web</span>Studio
           </a>
-        </li>
-        <li><a href="tel:380961111111" class="link">+38 096 111 11 11</a></li>
-      </ul>
+          <!-- main navigation -->
+          <ul class="site-nav list">
+            <li><a href="./index.html" class="link current">Студія</a></li>
+            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li><a href="" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="link">
+              info@devstudio.com
+            </a>
+          </li>
+          <li><a href="tel:380961111111" class="link">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
     </header>
+    <!-- main  -->
     <main>
       <section class="hero">
         <!-- hero section -->
@@ -43,377 +46,411 @@
       </section>
       <section class="section">
         <!-- features section -->
-        <h2 class="hidden">Переваги</h2>
-        <ul class="features list">
-          <li>
-            <h3 class="subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="description">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li>
-            <h3 class="subtitle">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="description">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li>
-            <h3 class="subtitle">ПЛАНУВАННЯ</h3>
-            <p class="description">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li>
-            <h3 class="subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="description">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="hidden">Переваги</h2>
+          <ul class="features-list list">
+            <li class="features-list-item">
+              <h3 class="subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="description">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="features-list-item">
+              <h3 class="subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="description">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="features-list-item">
+              <h3 class="subtitle">ПЛАНУВАННЯ</h3>
+              <p class="description">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="features-list-item">
+              <h3 class="subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="description">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- about us section -->
       <section class="section">
-        <h2 class="title">Чим ми займаємося</h2>
-        <ul class="works list">
-          <li>
-            <img src="./img/desctop.jpg" width="370" height="294" alt="Box 1" />
-          </li>
-          <li>
-            <img src="./img/note.jpg" width="370" height="294" alt="Box 2" />
-          </li>
-          <li>
-            <img
-              src="./img/featers3.jpg"
-              width="370"
-              height="294"
-              alt="Box 3"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="title">Чим ми займаємося</h2>
+          <ul class="works list">
+            <li>
+              <img
+                src="./img/desctop.jpg"
+                width="370"
+                height="294"
+                alt="Box 1"
+              />
+            </li>
+            <li>
+              <img src="./img/note.jpg" width="370" height="294" alt="Box 2" />
+            </li>
+            <li>
+              <img
+                src="./img/featers3.jpg"
+                width="370"
+                height="294"
+                alt="Box 3"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="section">
+      <section class="section has-bg">
         <!-- team section -->
-        <h2 class="title">Наша команда</h2>
-        <ul class="team list">
-          <li>
-            <img
-              src="./img/ihor.jpg"
-              width="270"
-              height="260"
-              alt="Ihor Demyanenko"
-            />
-            <h3 class="subtitle">Ігор Дем'яненко</h3>
-            <p class="description" lang="en">Product Designer</p>
-            <ul class="social-media list">
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Instagram"
-                  class="link"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Twitter"
-                  class="link"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Facebook"
-                  class="link"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="LinkedIn"
-                  class="link"
-                ></a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./img/olha.jpg"
-              alt="Olha Repina"
-              width="270"
-              height="260"
-            />
-            <h3 class="subtitle">Ольга Рєпіна</h3>
-            <p class="description" lang="en">Frontend Developer</p>
-            <ul class="social-media list">
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Instagram"
-                  class="link"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Twitter"
-                  class="link"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Facebook"
-                  class="link"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="LinkedIn"
-                  class="link"
-                ></a>
-              </li>
-            </ul>
-          </li>
+        <div class="container">
+          <h2 class="title">Наша команда</h2>
+          <ul class="team-list list">
+            <li class="team-list-item">
+              <img
+                src="./img/ihor.jpg"
+                width="270"
+                height="260"
+                alt="Ihor Demyanenko"
+              />
+              <div class="card-description">
+                <h3 class="subtitle">Ігор Дем'яненко</h3>
+                <p class="description" lang="en">Product Designer</p>
+                <ul class="social-media list">
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Instagram"
+                      class="link"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Twitter"
+                      class="link"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Facebook"
+                      class="link"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="LinkedIn"
+                      class="link"
+                    ></a>
+                  </li>
+                </ul>
+  
+              </div>
+            </li>
+            <li class="team-list-item">
+              <div class="thumb">
+                <img
+                src="./img/olha.jpg"
+                alt="Olha Repina"
+                width="270"
+                height="260"
+              />
 
-          <li>
-            <img
-              src="./img/mike.jpg"
-              alt="Mykola Tarasov"
-              width="270"
-              height="260"
-            />
-            <h3 class="subtitle">Микола Тарасов</h3>
-            <p class="description" lang="en">Marketing</p>
-            <ul class="social-media list">
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Instagram"
-                  class="link"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Twitter"
-                  class="link"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Facebook"
-                  class="link"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="LinkedIn"
-                  class="link"
-                ></a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./img/miha.jpg"
-              alt="Myhailo Ermakov"
-              width="270"
-              height="260"
-            />
-            <h3 class="subtitle">Михайло Єрмаков</h3>
-            <p class="description" lang="en">UI Designer</p>
-            <ul class="social-media list">
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Instagram"
-                  class="link"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Twitter"
-                  class="link"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Facebook"
-                  class="link"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="LinkedIn"
-                  class="link"
-                ></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+              </div>
+              <div class="card-description">
+                <h3 class="subtitle">Ольга Рєпіна</h3>
+                <p class="description" lang="en">Frontend Developer</p>
+                <ul class="social-media list">
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Instagram"
+                      class="link"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Twitter"
+                      class="link"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Facebook"
+                      class="link"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="LinkedIn"
+                      class="link"
+                    ></a>
+                  </li>
+                </ul>
+  
+              </div>
+            </li class="team-list-item">
+
+            <li>
+              <div class="thumb">
+                <img
+                src="./img/mike.jpg"
+                alt="Mykola Tarasov"
+                width="270"
+                height="260"
+              />
+
+              </div>
+              <div class="card-description">
+                <h3 class="subtitle">Микола Тарасов</h3>
+                <p class="description" lang="en">Marketing</p>
+                <ul class="social-media list">
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Instagram"
+                      class="link"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Twitter"
+                      class="link"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Facebook"
+                      class="link"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="LinkedIn"
+                      class="link"
+                    ></a>
+                  </li>
+                </ul>
+  
+              </div>
+            </li>
+            <li>
+              <div class="thumb">
+                <img
+                src="./img/miha.jpg"
+                alt="Myhailo Ermakov"
+                width="270"
+                height="260"
+              />
+              </div>
+              <div class="card-description">
+                <h3 class="subtitle">Михайло Єрмаков</h3>
+                <p class="description" lang="en">UI Designer</p>
+                <ul class="social-media list">
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Instagram"
+                      class="link"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Twitter"
+                      class="link"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Facebook"
+                      class="link"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="LinkedIn"
+                      class="link"
+                    ></a>
+                  </li>
+              </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- clients section -->
-      <section class="section">
-        <h2 class="title">Постійні клієнти</h2>
-        <ul class="clients list">
-          <li>
-            <a
-              href=""
-              class="link"
-              target="_blank"
-              rel="noreferrer noopener"
-            ></a>
-          </li>
-          <li>
-            <a
-              href=""
-              class="link"
-              target="_blank"
-              rel="noreferrer noopener"
-            ></a>
-          </li>
-          <li>
-            <a
-              href=""
-              class="link"
-              target="_blank"
-              rel="noreferrer noopener"
-            ></a>
-          </li>
-          <li>
-            <a
-              href=""
-              class="link"
-              target="_blank"
-              rel="noreferrer noopener"
-            ></a>
-          </li>
-          <li>
-            <a
-              href=""
-              class="link"
-              target="_blank"
-              rel="noreferrer noopener"
-            ></a>
-          </li>
-          <li>
-            <a
-              href=""
-              class="link"
-              target="_blank"
-              rel="noreferrer noopener"
-            ></a>
-          </li>
-        </ul>
-      </section>
+      <!-- <section class="section">
+        <div class="container">
+          <h2 class="title">Постійні клієнти</h2>
+          <ul class="clients list">
+            <li>
+              <a
+                href=""
+                class="link"
+                target="_blank"
+                rel="noreferrer noopener"
+              ></a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="link"
+                target="_blank"
+                rel="noreferrer noopener"
+              ></a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="link"
+                target="_blank"
+                rel="noreferrer noopener"
+              ></a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="link"
+                target="_blank"
+                rel="noreferrer noopener"
+              ></a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="link"
+                target="_blank"
+                rel="noreferrer noopener"
+              ></a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="link"
+                target="_blank"
+                rel="noreferrer noopener"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section> -->
     </main>
     <!-- page footer -->
     <footer class="footer">
-      <a href="./index.html" class="logo link"
-        ><span class="logo-accent">Web</span>Studio</a
-      >
-      <address>
-        <ul class="address list">
-          <li class="">
+      <div class="container">
+        <a href="./index.html" class="logo link"
+          ><span class="logo-accent">Web</span>Studio</a
+        >
+        <address>
+          <ul class="address list">
+            <li class="">
+              <a
+                href="https://maps.app.goo.gl/nbSyKvudo2XfWUQa6"
+                class="map link"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                м. Київ, пр-т Лесі Українки, 26
+              </a>
+            </li>
+            <li class="">
+              <a href="mailto:info@devstudio.com" class="link">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="">
+              <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+        <b class="subtitle">приєднуйтесь</b>
+        <ul class="social-media list">
+          <li>
             <a
-              href="https://maps.app.goo.gl/nbSyKvudo2XfWUQa6"
-              class="map link"
+              href=""
               target="_blank"
               rel="noreferrer noopener"
-            >
-              м. Київ, пр-т Лесі Українки, 26
-            </a>
+              aria-label="Instagram"
+              class="link"
+            ></a>
           </li>
-          <li class="">
-            <a href="mailto:info@devstudio.com" class="link">
-              info@devstudio.com
-            </a>
+          <li>
+            <a
+              href=""
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Twitter"
+              class="link"
+            ></a>
           </li>
-          <li class="">
-            <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
+          <li>
+            <a
+              href=""
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Facebook"
+              class="link"
+            ></a>
+          </li>
+          <li>
+            <a
+              href=""
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="LinkedIn"
+              class="link"
+            ></a>
           </li>
         </ul>
-      </address>
-      <b class="subtitle">приєднуйтесь</b>
-      <ul class="social-media list">
-        <li>
-          <a
-            href=""
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="Instagram"
-            class="link"
-          ></a>
-        </li>
-        <li>
-          <a
-            href=""
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="Twitter"
-            class="link"
-          ></a>
-        </li>
-        <li>
-          <a
-            href=""
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="Facebook"
-            class="link"
-          ></a>
-        </li>
-        <li>
-          <a
-            href=""
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="LinkedIn"
-            class="link"
-          ></a>
-        </li>
-      </ul>
+      </div>
     </footer>
   </body>
 </html>
